@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+       <div class="button-main">
+           <span>Форма</span>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close">&times;</a>
+                <div class="popup__title">Ваш Отзыв</div>
+                <div class="forms">
+                    <form action="https://formcarry.com/s/CgT4LGJ8d-" method="POST" accept-charset="UTF-8">
+                        <input name="Name" id="form-name" placeholder="Name *" class="input" type="text" required />
+                        <input name="Email" id="form-mail" placeholder="Email *" class="input" type="email" required />
+                        <textarea rows="10" cols="50" name="msg" id="form-text" placeholder="Message... *" class="input" required></textarea>
+                        <input type="checkbox" id="custom-checkbox">
+                        <label for="custom-checkbox">Я согласен с обработкой данных. *</label>
+                        <label class="warning">* - поле обязательно к заполнению</label>
+                        <input name="submit" class="button" type="submit" value="Отправить" />
+                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/ajax.js"></script>
+</body>
+
+</html>
